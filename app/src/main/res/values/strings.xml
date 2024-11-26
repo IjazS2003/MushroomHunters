@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MushroomHunters</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_recent_trip">Recent Trips</string>
+    <string name="title_trip">Trips</string>
+    <string name="title_mushroom">Mushrooms</string>
+    <string name="title_upload">Upload</string>
+</resources>

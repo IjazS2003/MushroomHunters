@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_to_recent">
+
+    <fragment
+        android:id="@+id/navigation_to_recent"
+        android:name="com.example.mushroomhunters.ui.recenttrips.RecentTripsFragment"
+        android:label="@string/title_recent_trip"
+        tools:layout="@layout/recent_fragment" >
+
+        <action
+            android:id="@+id/action_dashboard_to_trip_detail"
+            app:destination="@id/nav_detail_trip" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_to_trips"
+        android:name="com.example.mushroomhunters.ui.trips.TripFragment"
+        android:label="@string/title_trip"
+        tools:layout="@layout/trip_fragment">
+        <action
+            android:id="@+id/action_trips_to_trip_form"
+            app:destination="@id/nav_trip_form" />
+        <action
+            android:id="@+id/action_trips_to_trip_detail"
+            app:destination="@id/nav_detail_trip" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_to_mushrooms"
+        android:name="com.example.mushroomhunters.ui.mushrooms.MushroomFragment"
+        android:label="@string/title_mushroom"
+        tools:layout="@layout/mushroom_fragment">
+        <action
+            android:id="@+id/action_mushrooms_to_mushroom_form"
+            app:destination="@id/nav_mushroom_form" />
+        <action
+            android:id="@+id/action_mushrooms_to_mushroom_detail"
+            app:destination="@id/nav_detail_mushroom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_to_upload"
+        android:name="com.example.mushroomhunters.ui.upload.UploadFragment"
+        android:label="@string/title_upload"
+        tools:layout="@layout/upload_fragment" />
+
+    <fragment
+        android:id="@+id/nav_trip_form"
+        android:name="com.example.mushroomhunters.ui.trips.AddTripFragment"
+        android:label="Create/Update Trip"
+        tools:layout="@layout/add_trip_fragment" />
+
+    <fragment
+        android:id="@+id/nav_mushroom_form"
+        android:name="com.example.mushroomhunters.ui.mushrooms.AddMushroomFragment"
+        android:label="Create/Update Mushroom"
+        tools:layout="@layout/add_mushroom_fragment" />
+
+    <fragment
+        android:id="@+id/nav_detail_trip"
+        android:name="com.example.mushroomhunters.ui.trips.ViewTripFragment"
+        android:label="Trip Detail"
+        tools:layout="@layout/detail_trip_fragment" />
+
+    <fragment
+        android:id="@+id/nav_detail_mushroom"
+        android:name="com.example.mushroomhunters.ui.mushrooms.ViewMushroomFragment"
+        android:label="Mushroom Detail"
+        tools:layout="@layout/detail_mushroom_fragment" />
+</navigation>

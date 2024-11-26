@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_to_recent"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_to_trips"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/title_trip" />
+
+    <item
+        android:id="@+id/navigation_to_mushrooms"
+        android:icon="@drawable/ic_mountain"
+        android:title="@string/title_mushroom" />
+    <item
+        android:id="@+id/navigation_to_upload"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="@string/title_upload" />
+</menu>
